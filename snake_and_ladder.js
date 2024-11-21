@@ -76,13 +76,7 @@ function getRow(userValue, playerLocation2, column, box, series, player1Symbol,
      player1Symbol, player2Symbol);
 }
 
-function user() {
-  const value = prompt("enter:");
-  return boxs(+value, 10, 1);
-}
-
 //------------game----------
-
 function dice(range) {
   return Math.ceil(Math.random() * range);
 }
