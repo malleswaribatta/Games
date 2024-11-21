@@ -97,6 +97,16 @@ function quit() {
   return 'your exiting from the game.......';
 }
 
+function __snakeAndLadder() {
+  const player1Name = prompt("Enter player1 name:");
+  const player2Name = prompt("Enter player2 name:");
+
+  console.log("-------------GAME STARTS NOW-------------");
+
+
+  return snakeAndLadder(0, 0, 1, player1Name, player2Name);
+}
+
 function choice() {
   console.log("1.Help\n2.Play\n3.Quit");
 
@@ -105,15 +115,6 @@ function choice() {
     case 2: console.log(__snakeAndLadder());
     case 3: return quit();
   }
-}
-
-function __snakeAndLadder() {
-  const player1Name = prompt("Enter player1 name:");
-  const player2Name = prompt("Enter player2 name:");
-
-  console.log("-------------GAME STARTS NOW-------------");
-
-  return snakeAndLadder(0, 0, 1, player1Name, player2Name);
 }
 
 console.log(choice());
